@@ -1,0 +1,31 @@
+import java.nio.channels.Pipe.SourceChannel;
+import java.util.Scanner;
+
+
+public class Follow_Cadastro { // CLASSE PARA CADASTRO DE FOLLOW UP
+
+	public void FollowCadastra(){
+		
+		VerificadorCasos verif = new VerificadorCasos();
+		Scanner scanner = new Scanner(System.in);
+		String data;
+		String follow;
+		
+		System.out.println("Bem vindo ao cadastro de Follow UP's");
+		System.out.println("Com até 1000 caracteres, registre o follow UP de seu cliente.*");
+		
+		do{
+			follow = scanner.nextLine();
+		}while(verif.VerificaWords(follow) == false);
+		
+		System.out.println("Data: ");
+		data = scanner.nextLine();
+		
+		System.out.println("Obrigado!");
+		
+		//System.out.println(follow);
+		
+
+	}
+
+}
