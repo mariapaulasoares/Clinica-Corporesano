@@ -80,4 +80,10 @@ public class VerificadorCasos {
 		
 		return ChaveVerificadora;
 	}
+	
+	public boolean VerificaWords(String words){//VERIFICA SE A STRING DE FOLLOW UPS TEM MAIS DE 1000 PALAVRAS E RETORNA FALSE SE A RESPOSTA FOR SIM
+		if (words.length() > 1000) ChaveVerificadora = false;
+		
+		return ChaveVerificadora;
+	}
 }
